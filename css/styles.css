@@ -1,0 +1,293 @@
+/*Basic*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+
+h1 {
+    font-size: 1.75em;
+    font-weight: normal;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*Header*/
+
+.name {
+    text-align: center;
+    margin: 0;
+    padding: .15%;
+    background-color: #22333C;
+}
+
+.info {
+    padding-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}
+
+.info p {
+    font-size: 1.16em;
+    line-height: 1.7;
+    margin-top: -7%;
+    padding: 15px 0 5px;
+    color: rgba(99, 95, 95, 0.5);
+}
+
+/*Dividing-line*/
+
+hr {
+    width: 95%;
+    background-color: #000;
+    height: 3px;
+}
+
+.second-dividing-line {
+    margin-top: -1.5%;
+    height: 1px;
+}
+
+#bottom-dividing-line {
+    width: 99%;
+    height: 2px;
+}
+
+/*Contact Form*/
+
+form {
+    margin-top: -2%;
+    background-color: #dde5f4;  
+}
+
+legend {
+    margin-left: -1%;
+    padding-top: 12px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+label {
+    float: left;
+    margin-top: 10px;
+    padding: 5px 0;
+    color: #818587;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    font-family: 'Arsenal', sans-serif;
+    width: 100%;
+    padding: 4.25%;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: none;
+    background-color: #eceeee;
+    font-size: 1em;
+    text-align: left;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    transition: background-color 0.5s ease;
+    background-color: white;
+    outline: none;
+    border: 2px solid #32327c;
+}
+
+select {
+    height: 55px;
+    color: #888;
+}
+
+#zip_code {
+    width: 45%;
+    margin: 12.5% 0 5% -18.8%; /* margin-left in (320px) dev tools: -23.5%;*/
+}
+
+/*Placeholder Section*/
+
+::-webkit-input-placeholder { 
+  font-family: 'Arsenal', sans-serif;
+  text-align: right;
+  font-size: 0.85rem;  
+}
+
+::-moz-placeholder {
+    font-family: 'Arsenal', sans-serif;
+    text-align: right;
+    font-size: 0.85rem;
+}
+
+/*Newsletter Section*/
+
+.cbox_rad {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-top: 15px;
+    color: #888;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin: 12px 0;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    margin-left: 1%;
+    padding: 5px;
+    font-size: .98em;
+    float: none;  
+}
+
+textarea,
+button[type="submit"]{
+    resize: none;
+    width: 100%;
+    padding: 15%;
+    margin: 15px 0;
+    background-color: #eceeee;
+    border-radius: 4px;
+    border: none;
+}
+
+button[type="submit"] {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.2;
+    color: white;
+    padding: 5%;
+    background-color: #52bab3;
+    box-shadow: 3px 3px 5px lightgrey;
+    transition: width 2s, height 4s;
+    -webkit-transition: width 2s, height 4s; /* Safari */
+    
+}
+
+button:hover {
+    color: #888;
+    height: 100px;
+}
+
+footer h3 {
+    font-weight: 200;
+    font-size: .9em;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding-bottom: 60%;
+}
+
+
+
+
+/*Media Query*/
+
+@media (min-width: 768px){
+    
+    .info h2 {
+        font-weight: 700;
+        padding-top: 40px;
+        font-size: 2rem;
+    }
+   
+    .info p {
+        margin-top: -2%;
+        padding: 5px;
+    }
+    
+    hr {
+        width: 60%;
+    }
+    
+    .second-dividing-line {
+        margin-top: -0.4%;
+    }
+
+    form {
+        background-color: transparent;
+        margin: 2% 0 0 19.7%;
+        width: 60.5%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 80%;
+        padding: 3%;
+        margin: 3% 0 2% 21.35%;
+    }
+      
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder { 
+        font-size: 1.15rem;  
+    }
+    
+    label {
+        margin: 5% -40% 0 -1.15%;
+        padding: 0;
+    }
+    
+    select {
+        height: 75px;
+        font-size: 1.15rem;
+    }
+
+    #zip_code {
+        width: 27%;
+        margin-left: 21.3%;
+        margin-top: 2.6%;
+    } 
+    
+    #bottom-dividing-line {
+        width: 102.75%;
+        margin-left: -1.5%;
+    }
+    
+    textarea {
+        width: 159.6%;
+        padding: 35px;
+    }
+
+    button[type="submit"]{
+        width: 103%;
+        height: 0;
+        padding: 3% 0 5.5% 0;
+        margin: 5% 0 0 -1.4%;
+    }
+    
+    legend {
+        margin-left: -1.4%;
+    }
+    .newsletter {
+        margin-left: -1.4%;
+    }
+    
+    footer h3 {
+        padding-bottom: 25%;
+    }   
+}
+
+
+
+
+

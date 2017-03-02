@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width intial-scale=1.0">
+            <title>Project 3</title>
+            <link rel="stylesheet" href="css/normalize.css">
+            <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
+            <link rel="stylesheet" href="css/styles.css">
+        </head>
+        
+        <body>
+            <header class="name">
+                <h1>The Code Review</h1>
+            </header>
+            <div class="info">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox.</p> 
+            </div>
+            <hr class="dividing-line">
+            <hr class="second-dividing-line">
+                     
+            <form action="index.html" method="post">
+                <fieldset class="contact">  
+                    <legend>Contact Information</legend>
+                    
+                         <label for="name">Full Name</label>
+                         <input required type="text" id="name" name="user_name" placeholder="Required"><br>
+
+                         <label for="mail">Email Address</label>
+                         <input required type="email" id="mail" name="user_email" placeholder="Required"><br>
+
+                         <label for="phone">Phone Number</label>
+                         <input type="tel" id="phone" name="user_phone" placeholder="Optional"><br>
+
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address"><br>
+
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city"><br>
+
+                        <label for="state">State</label>   
+                            <select id="state" name="user_state">
+                                <option value="choose">Choose State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="IN">Indiana</option>
+                                <option value="KS">Kansas</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+
+                        <label for="zip_code">Zip Code</label>
+                        <input type="text" id="zip_code" name="user_zip_code"><br>
+
+                    <hr id="bottom-dividing-line">
+                </fieldset> 
+                <fieldset>    
+                    <legend>Newsletter</legend>
+                        <div class="newsletter">
+                            <p class="cbox_rad">Select the newsletters you would like to receive</p>
+                            <input type="checkbox" id="cbox1" name="html"><label for="cbox1">HTML News</label><br>
+                            <input type="checkbox" id="cbox2" name="css"><label for="cbox2">CSS News</label><br>
+                            <input type="checkbox" id="cbox3" name="java"><label for="cbox3">Javascript News</label>
+                        
+
+                            <p class="cbox_rad">Newsletter format</p>
+                            <input type="radio" id="rad1" name="rad1"><label for="rad1">HTML</label><br>
+                            <input type="radio" id="rad2" name="plain"><label for="rad2">Plain text</label>
+                        </div>
+                        
+                        <label for="topics">Other topics you'd like to hear about
+                        <textarea id="topics" name="other_topics"></textarea></label>
+                        <button type="submit" id="submit" name="user_submit">Sign Up</button>
+                </fieldset>
+            </form>
+            
+            <footer>
+                <h3>Copyright The Code Review</h3>
+            </footer>
+            
+        </body>
+        
+    </html>
